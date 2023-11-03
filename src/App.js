@@ -1,8 +1,8 @@
 import './App.css';
-import CardOfGames from './CardOfGames';
-import Header from './Header';
-import LoginSection from './LoginSection';
-import WelcomeCard from './WelcomeCard';
+import CardOfGames from './Bory/CardOfGames';
+import Header from './Header/Header';
+import LoginSection from './Login/LoginSection';
+import WelcomeCard from './Bory/WelcomeCard';
 function App() {
   return (
     <div className="App">

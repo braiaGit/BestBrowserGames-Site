@@ -20,7 +20,7 @@ function LoginSection(){
               <input type="checkbox" class="c-p" value="remember-me"/> Permanecer conectado
             </label>
           </div>
-          <button class="w-100 btn btn-lg btn-primary" type="submit">Entrar</button>
+          <button class="w-100 btn btn-lg btn-warning" type="submit">Entrar</button>
           <hr class="my-4"/>
           <small class="text-body-secondary">Não tem uma conta? Clique aqui: <a href="#">Cadastrar-se</a></small>
         </form>

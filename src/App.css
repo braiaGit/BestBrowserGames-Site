@@ -1,16 +1,4 @@
 *{margin: 0;padding: 0;}
-.cardOfGames{
-    width: 80%;
-    height: 300px;
-    border-radius: 21px 21px 0 0;
-}
-.w-h{
-    height: 250px;
-    object-fit: cover;
-}
-.tb{
-    width: 350px;
-}
 .c-p{
     cursor: pointer;
 }
