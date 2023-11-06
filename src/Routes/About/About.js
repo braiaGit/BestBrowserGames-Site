@@ -1,5 +1,5 @@
-import './sobre.css'
-function Sobre() {
+import './about.css'
+function About() {
     return(       
          <div className="container shadow rounded p-5 m-4 pt-1 responsiveAbout">
              <h2 className="fw-bold mb-2 m-3 mt-5">Sobre o BestBrowserGames</h2>
@@ -29,4 +29,4 @@ function Sobre() {
     )
     
 }
-export default Sobre;
+export default About;

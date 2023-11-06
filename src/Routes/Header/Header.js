@@ -15,11 +15,11 @@ function Header() {
           <Navbar.Collapse id="basic-navbar-nav" className="offcanvas-body">
             <Nav className="me-auto navbar-nav flex-grow-1 justify-content-between t-s2">
               <Nav.Link className='nav-item nav-link text-light-emphasis' href="#home"></Nav.Link>
-              <Nav.Link className='nav-item nav-link text-light-emphasis' href="#home">inicio</Nav.Link>
+              <Nav.Link className='nav-item nav-link text-light-emphasis' href="/">inicio</Nav.Link>
               <Nav.Link className='nav-item nav-link text-light-emphasis' href="#home"></Nav.Link>
               <Nav.Link className='nav-item nav-link text-light-emphasis' href="#home">Categorias</Nav.Link>
               <Nav.Link className='nav-item nav-link text-light-emphasis' href="#home"></Nav.Link>
-              <Nav.Link className='nav-item nav-link text-light-emphasis' href="../Sobre/Sobre.js">Sobre</Nav.Link>
+              <Nav.Link className='nav-item nav-link text-light-emphasis' href="about">Sobre</Nav.Link>
               <Nav.Link className='nav-item nav-link text-light-emphasis' href="#home"></Nav.Link>
             </Nav>
           </Navbar.Collapse>
