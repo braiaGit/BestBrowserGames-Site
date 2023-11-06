@@ -19,7 +19,7 @@ function Header() {
               <Nav.Link className='nav-item nav-link text-light-emphasis' href="#home"></Nav.Link>
               <Nav.Link className='nav-item nav-link text-light-emphasis' href="#home">Categorias</Nav.Link>
               <Nav.Link className='nav-item nav-link text-light-emphasis' href="#home"></Nav.Link>
-              <Nav.Link className='nav-item nav-link text-light-emphasis' href="#home">Sobre</Nav.Link>
+              <Nav.Link className='nav-item nav-link text-light-emphasis' href="../Sobre/Sobre.js">Sobre</Nav.Link>
               <Nav.Link className='nav-item nav-link text-light-emphasis' href="#home"></Nav.Link>
             </Nav>
           </Navbar.Collapse>

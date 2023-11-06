@@ -3,6 +3,7 @@ import CardOfGames from './Bory/CardOfGames';
 import Header from './Header/Header';
 import LoginSection from './Login/LoginSection';
 import WelcomeCard from './Bory/WelcomeCard';
+import Sobre from './Sobre/Sobre';
 function App() {
   return (
     <div className="App">
@@ -11,7 +12,7 @@ function App() {
       <main className='container'>
       <LoginSection/>
       <CardOfGames/>
-
+      <Sobre/>
       </main>
     </div>
   );
