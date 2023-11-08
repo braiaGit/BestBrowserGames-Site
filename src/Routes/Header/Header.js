@@ -11,7 +11,7 @@ function Header() {
     <header className="p-2 px-5 text-bg-dark">
       <Navbar expand="lg" className="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
         <Container tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
-          <Navbar.Brand className='navbar-brand text-warning t-s1' href="#home">BBGames</Navbar.Brand>
+          <Navbar.Brand className='navbar-brand text-warning t-s1' href="/">BBGames</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav" className="offcanvas-body">
             <Nav className="me-auto navbar-nav flex-grow-1 justify-content-between t-s2">
@@ -35,7 +35,7 @@ function Header() {
               <NavDropdown.Item href="#action/3.4">Mostrar todos</NavDropdown.Item>
           </NavDropdown>
           <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-            <input type="search" className="form-control form-control-dark text-bg-dark" placeholder="Pesquisar..." aria-label="Search" />
+            <input type="search" className="form-control form-control-dark text-bg-dark m-responsive" placeholder="Pesquisar..." aria-label="Search" />
           </form>
           <div className="text-end">
             <button type="button" className="btn btn-outline-light me-2">Entrar</button>

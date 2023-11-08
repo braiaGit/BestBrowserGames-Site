@@ -6,7 +6,7 @@ function WelcomeCard(){
       <h3 class="fw-normal text-muted mb-3 lh-base">Encontre os melhores jogos de navegador aqui.
       Com avaliaçãoes e opiniões de outros jogadores</h3>
       <div class="d-flex gap-3 justify-content-center lead fw-normal">
-        <a class="icon-link text-decoration-none" href="#">
+        <a class="icon-link text-decoration-none" href="about">
           Sobre
         </a>
       </div>

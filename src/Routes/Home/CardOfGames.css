@@ -1,4 +1,14 @@
 .w-h{
-    height: 250px;
+    height: 190px;
     object-fit: cover;
+}
+.card{
+    height: 400px;
+}
+.onCenter{
+    position: relative !important;
+    top: 30%;
+}
+.n{
+    border: none;
 }

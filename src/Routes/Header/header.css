@@ -8,3 +8,20 @@ ul.t-s2>li{
 .navDrop{
     margin-right: 90px;
 }
+@media screen and (max-width:766px) {
+    .navDrop{
+        border: solid 1px rgba(255, 255, 255, 0.1);
+        border-radius: 6px;
+        padding: 5px 10px;
+        position: relative;
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 539px) {
+    .t-s1{
+        display: none;
+    }
+    .m-responsive{
+        margin-top: 11px;
+    }
+}
