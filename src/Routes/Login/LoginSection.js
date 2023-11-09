@@ -33,7 +33,7 @@ function LoginSection(){
           </div>
           <button class="w-100 btn btn-lg btn-warning" type="submit">Entrar</button>
           <hr class="my-4"/>
-          <small class="text-body-secondary">Não tem uma conta? Clique aqui: <a href="#">Cadastrar-se</a></small>
+          <small class="text-body-secondary">Não tem uma conta? Clique aqui: <a href="register">Cadastrar-se</a></small>
         </form>
       </div>
     </div>
