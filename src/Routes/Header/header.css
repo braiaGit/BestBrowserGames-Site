@@ -25,3 +25,8 @@ ul.t-s2>li{
         margin-top: 11px;
     }
 }
+@media screen and (min-width:766px) {
+    .navbar{
+        padding: 0 !important;
+    }
+}

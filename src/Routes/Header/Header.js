@@ -8,7 +8,7 @@ import './header.css'
 function Header() {
 
   return (
-    <header className="p-2 px-5 text-bg-dark">
+    <header className="px-5 text-bg-dark">
       <Navbar expand="lg" className="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
         <Container tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
           <Navbar.Brand className='navbar-brand text-warning t-s1' href="/">BBGames</Navbar.Brand>

@@ -13,8 +13,8 @@ function CardOfGames() {
                         </div>
                         <div class="d-flex justify-content-between align-items-center m-3">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-outline-info fs-5">Jogar</button>
-                                <button type="button" class="btn btn-outline-success fs-5">Comentarios</button>
+                                <button type="button" class="btn btn-outline-warning fs-5">Jogar</button>
+                                <button type="button" class="btn btn-outline-dark fs-5">Comentarios</button>
                             </div>
                             <small class="text-body-secondary fs-6">avaliaçãoes</small>
                         </div>
@@ -29,21 +29,21 @@ function CardOfGames() {
                         </div>
                         <div class="d-flex justify-content-between align-items-center m-3">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-outline-info fs-5">Jogar</button>
-                                <button type="button" class="btn btn-outline-success fs-5">Comentarios</button>
+                                <button type="button" class="btn btn-outline-warning fs-5">Jogar</button>
+                                <button type="button" class="btn btn-outline-dark fs-5">Comentarios</button>
                             </div>
                             <small class="text-body-secondary fs-6">avaliaçãoes</small>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card n bg-info-subtle shadow">
+                    <div class="card n bg-warning-subtle shadow">
                         <div class="card-body text-center onCenter">
                             <h5 class="card-title">Ver lista completa de Games</h5>
                             <p class="card-text lh-base ">
                                 Explore os melhores jogos de navegador, veja avaliaçãoes de jogadores e os jogos em alta.
                             </p>
-                            <button class="btn btn-primary d-inline-flex align-items-center" type="button">
+                            <button class="btn btn-warning d-inline-flex align-items-center" type="button">
                                 Ver todos 
                                 <BsArrowBarRight className='ms-2'/>
                             </button>
