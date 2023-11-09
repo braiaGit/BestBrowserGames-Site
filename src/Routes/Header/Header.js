@@ -8,7 +8,7 @@ import './header.css'
 function Header() {
 
   return (
-    <header className="px-5 text-bg-dark">
+    <header className="px-2 text-bg-dark">
       <Navbar expand="lg" className="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
         <Container tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
           <Navbar.Brand className='navbar-brand text-warning t-s1' href="/">BBGames</Navbar.Brand>
@@ -32,14 +32,14 @@ function Header() {
               <NavDropdown.Item href="#action/3.3">Adventure</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Action</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Mostrar todos</NavDropdown.Item>
+              <NavDropdown.Item href="games">Mostrar todos</NavDropdown.Item>
           </NavDropdown>
           <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
             <input type="search" className="form-control form-control-dark text-bg-dark m-responsive" placeholder="Pesquisar..." aria-label="Search" />
           </form>
           <div className="text-end">
-            <button type="button" className="btn btn-outline-light me-2">Entrar</button>
-            <button type="button" className="btn btn-warning">Cadastrar</button>
+            <a href='login' className="btn btn-outline-light me-2">Entrar</a>
+            <a href='register' className="btn btn-warning">Cadastrar</a>
           </div>
         </Container>
       </Navbar>

@@ -11,6 +11,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
 import About from './Routes/About/About';
 import Home from './Routes/Home/Home';
+import GamesPage from './Routes/Games/GamesPage';
+import LoginPage from './Routes/Login/LoginPage';
+import RegisterPage from './Routes/Login/RegisterPage';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +27,18 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About/>,
+      },
+      {
+        path: "games",
+        element: <GamesPage/>,
+      },
+      {
+        path: "login",
+        element: <LoginPage/>,
+      },
+      {
+        path: "register",
+        element: <RegisterPage/>,
       },
     ],
   },

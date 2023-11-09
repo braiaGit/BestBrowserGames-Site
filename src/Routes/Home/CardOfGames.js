@@ -43,10 +43,10 @@ function CardOfGames() {
                             <p class="card-text lh-base ">
                                 Explore os melhores jogos de navegador, veja avaliaçãoes de jogadores e os jogos em alta.
                             </p>
-                            <button class="btn btn-warning d-inline-flex align-items-center" type="button">
+                            <a href='games' class="btn btn-warning d-inline-flex align-items-center">
                                 Ver todos 
                                 <BsArrowBarRight className='ms-2'/>
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>

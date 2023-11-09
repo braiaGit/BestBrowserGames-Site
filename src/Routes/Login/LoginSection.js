@@ -17,9 +17,9 @@ function LoginSection(){
         <p class="col-lg-10 fs-4">Fazendo login você podera comentar sobre os jogos que já jogou, avaliar, e até mesmo interagir com outros usuários. Se ainda não tiver uma conta, você pode se cadastrar rapidamente clicando em "Cadastrar-se".</p>
       </div>
       <div class="col-md-10 mx-auto col-lg-5">
-        <form onSubmit={validationForm} class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+        <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
           <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" onChange={inputChange}/>
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"/>
             <label for="floatingInput">Email</label>
           </div>
           <div class="form-floating mb-3">
