@@ -88,3 +88,5 @@ fetch('http://localhost:3001/categories',{
         data[0].name
     })
 })
+rafael.viegas@live.com
+123abc

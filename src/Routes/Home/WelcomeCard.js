@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './welcomeCard.css'
 function WelcomeCard(){
     return(
@@ -7,9 +8,9 @@ function WelcomeCard(){
       <h3 class="fw-normal text-muted mb-3 lh-base">Encontre os melhores jogos de navegador aqui.
       Com avaliaçãoes e opiniões de outros jogadores</h3>
       <div class="d-flex gap-3 justify-content-center lead fw-normal">
-        <a class="icon-link text-decoration-none" href="about">
+        <Link class="icon-link text-decoration-none" to='about'>
           Sobre
-        </a>
+        </Link>
       </div>
     </div>
     <div class="product-device shadow-sm d-none d-md-block"></div>

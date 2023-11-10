@@ -30,3 +30,7 @@ ul.t-s2>li{
         padding: 0 !important;
     }
 }
+.c-p-d{
+    user-select: none !important;
+    cursor: default !important;
+}

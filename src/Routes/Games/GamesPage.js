@@ -1,4 +1,3 @@
-import { AiFillStar } from 'react-icons/ai'
 import './gamesPage.css'
 const response = await fetch(
     "https://api-best-browser-games.vercel.app/games",
