@@ -1,7 +1,6 @@
 import './registerPage.css'
 function RegisterPage() {
     return (
-        <main className="container py-5 centerAli">
             <div class="row g-5 regis">
                 <h4 class="mb-3">Lista de cadastro</h4>
                 <form class="needs-validation" novalidate="">
@@ -75,7 +74,5 @@ function RegisterPage() {
                     <button class="w-100 btn btn-warning btn-lg" type="button">Cadastrar</button>
                 </form>
             </div>
-        </main>
-    )
-}
+)}
 export default RegisterPage;

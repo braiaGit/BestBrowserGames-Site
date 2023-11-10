@@ -30,11 +30,9 @@ function GamesPage() {
             )
         })
     return (
-        <main className="container py-5">
             <div className="row row-cols-1 row-cols-md-3 g-4">
                 {Card()}
             </div>
-        </main>
     )
 }
 export default GamesPage;

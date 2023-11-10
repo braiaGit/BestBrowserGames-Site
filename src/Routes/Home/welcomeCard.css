@@ -1,3 +1,11 @@
 .tx{
     text-shadow: 1px 1px 3px #ffc10770; 
 }
+.cardCom{
+    top: -60px;
+}
+@media screen and (max-width:760px) {
+    .cardCom{
+        top: 0;
+    }
+}

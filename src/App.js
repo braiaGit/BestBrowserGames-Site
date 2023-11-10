@@ -6,9 +6,11 @@ import Footer from './Routes/Footer/Footer';
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Outlet/>
-      <Footer/>
+        <Header/>
+      <main className="container py-5">
+        <Outlet/>
+      </main>
+        <Footer/>
     </div>
   );
 }

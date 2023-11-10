@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import './welcomeCard.css'
 function WelcomeCard(){
     return(
-        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary cardCom">
     <div class="col-md-6 p-lg-5 mx-auto my-5">
       <h1 class="display-3 fw-bold">Bem vindo a <p className="text-warning tx">Best Browser Games</p></h1>
       <h3 class="fw-normal text-muted mb-3 lh-base">Encontre os melhores jogos de navegador aqui.

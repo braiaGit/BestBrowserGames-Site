@@ -5,11 +5,9 @@ import CardOfGames from "./CardOfGames";
 function Home() {
     return (
         <div>
-            <WelcomeCard />
-            <main className='container'>
+                <WelcomeCard />
                 <LoginSection />
                 <CardOfGames />
-            </main>
         </div>
     )
 }
