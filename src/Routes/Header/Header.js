@@ -4,8 +4,25 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import './header.css'
 
+const response = await fetch(
+  "https://api-best-browser-games.vercel.app/categories",
+  {
+      method: "GET",
+      headers: {
+          "Content-Type": "application/json",
+      },
+  }
+);
+const data = await response.json();
 
 function Header() {
+
+  const Categories = () =>
+  data.map((category) => {
+      return (
+         <NavDropdown.Item href="#action/3.1">{category.name}</NavDropdown.Item>
+      )
+  })
 
   return (
     <header className="px-2 text-bg-dark">
@@ -22,15 +39,7 @@ function Header() {
             </Nav>
           </Navbar.Collapse>
           <NavDropdown className='navDrop' title="Categorias" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Strategy</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Shooter</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Puzzle</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Arcade</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">RPG</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Sports</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Adventure</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Action</NavDropdown.Item>
+              <Categories/>
               <NavDropdown.Divider />
               <NavDropdown.Item href="games">Mostrar todos</NavDropdown.Item>
           </NavDropdown>

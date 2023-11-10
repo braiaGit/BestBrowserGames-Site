@@ -1,41 +1,39 @@
 import './CardOfGames.css'
 import { BsArrowBarRight } from 'react-icons/bs'
+const response = await fetch(
+    "https://api-best-browser-games.vercel.app/games",
+    {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    }
+);
+const data = await response.json();
 function CardOfGames() {
+    const Card = () =>
+    data.map((game, index) => {
+        if(index >= 2) return
+        return (
+            <div className="col">
+                <div className="card shadow">
+                    <img src={game.imageURL} className="card-img-top w-h" alt="imagem ilustrativa do jogo" />
+                    <div className="card-body">
+                        <h5 className="card-title">{game.name}</h5>
+                        <p className="card-text">{game.description}</p>
+                        <div className="btn-group cardButtons">
+                            <a href={game.url} target='blank' className="btn btn-outline-warning fs-5">Jogar</a>
+                            <button type="button" className="btn btn-outline-dark fs-5">Comentarios</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
+    })
     return (
         <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
             <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card shadow">
-                        <img src="https://imgs.search.brave.com/tcZ01i9BJGApoZv7Arjuu8GIHMrNwB1d_gzb_-e0HPY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/ZnJpdjJvbmxpbmUu/Y29tL2ZpbGVzL2lt/YWdlcy8xNC8xNGJm/NmY4Y2M1ODQyZGNh/MmFmNGQ4ZDcxNGJi/NjViMi5qcGc" class="card-img-top w-h" alt="imagem ilustrativa do jogo" />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center m-3">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-outline-warning fs-5">Jogar</button>
-                                <button type="button" class="btn btn-outline-dark fs-5">Comentarios</button>
-                            </div>
-                            <small class="text-body-secondary fs-6">avaliaçãoes</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow">
-                        <img src="https://imgs.search.brave.com/tcZ01i9BJGApoZv7Arjuu8GIHMrNwB1d_gzb_-e0HPY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/ZnJpdjJvbmxpbmUu/Y29tL2ZpbGVzL2lt/YWdlcy8xNC8xNGJm/NmY4Y2M1ODQyZGNh/MmFmNGQ4ZDcxNGJi/NjViMi5qcGc" class="card-img-top w-h" alt="imagem ilustrativa do jogo" />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center m-3">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-outline-warning fs-5">Jogar</button>
-                                <button type="button" class="btn btn-outline-dark fs-5">Comentarios</button>
-                            </div>
-                            <small class="text-body-secondary fs-6">avaliaçãoes</small>
-                        </div>
-                    </div>
-                </div>
+                <Card/>
                 <div class="col">
                     <div class="card n bg-warning-subtle shadow">
                         <div class="card-body text-center onCenter">

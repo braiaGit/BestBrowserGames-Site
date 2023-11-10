@@ -72,7 +72,7 @@ function RegisterPage() {
                         <label class="form-check-label" for="save-info">Gostaria de receber novidades por email</label>
                     </div>
                     <hr class="my-4" />
-                    <button class="w-100 btn btn-primary btn-lg" type="button">Cadastrar</button>
+                    <button class="w-100 btn btn-warning btn-lg" type="button">Cadastrar</button>
                 </form>
             </div>
         </main>
