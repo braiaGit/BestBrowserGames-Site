@@ -3,16 +3,22 @@ import { Link } from "react-router-dom"
 
 
 function LoginForm(){
-    const inputs= {
-        floatingInput: "",
-        floatingPassword: "",
-     };
-     const [user, setUser] = useState(inputs);
- const onChange= (e) => {
-         const { id, value } = e.target;
-         setUser((prevState) => ({ ...prevState, [id]: value }));
-     };
-    const onClick = ()=> fetch('https://api-best-browser-games.vercel.app/users/login',{
+
+      const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      const inputs= {
+          floatingInput: "",
+          floatingPassword: "",
+        };
+
+        const [user, setUser] = useState(inputs);
+        const onChange= (e) => {
+            const { id, value } = e.target;
+            setUser((prevState) => ({ ...prevState, [id]: value }));
+        };
+
+    const emailValited = emailRegex.test(user.floatingInput)
+
+    const onClick = ()=> emailValited === true ? fetch('https://api-best-browser-games.vercel.app/users/login',{
     method: "POST",
     headers: {
         "Content-Type": "application/json",
@@ -24,7 +30,7 @@ function LoginForm(){
         console.log(resposta)
         console.log(user.floatingInput)
         console.log(user.floatingPassword)
-    })
+    }): console.log("Insira um email válido")
 
     return(
         <form className="p-4 p-md-5 border rounded-3 bg-body-tertiary">

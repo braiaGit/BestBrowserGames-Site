@@ -1,17 +1,6 @@
 import LoginForm from "./loginForm"
 
 function LoginSection(){
-  // const inputChange = (e)=>{
-    //   const inputValue = e.target.value;
-    //   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    //   const emailValited = emailRegex.test(inputValue)
-    //   if(emailValited){
-      //     console.log("email válido")
-      //   }else console.log('email inválido')
-      // }
-      // const validationForm = (e)=>{
-        //   e.preventDefault();
-        // }
         return (
           <div class="row align-items-center g-lg-5 py-5">
       <div class="col-lg-7 text-center text-lg-start">

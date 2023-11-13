@@ -2,3 +2,13 @@
     position: absolute;
     bottom: 15px;
 }
+.w-87{
+    width: 87% !important;
+}
+.bgray{
+    background-color: #EBEDF0;
+}
+.fs-13{
+    font-size: 13px;
+    font-weight: 600;
+}

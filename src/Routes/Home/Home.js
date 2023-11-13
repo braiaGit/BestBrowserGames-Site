@@ -4,11 +4,11 @@ import LoginSection from "../Login/LoginSection";
 import CardOfGames from "./CardOfGames";
 function Home() {
     return (
-        <div>
-                <WelcomeCard />
-                <LoginSection />
-                <CardOfGames />
-        </div>
+        <>
+            <WelcomeCard />
+            <LoginSection />
+            <CardOfGames />
+        </>
     )
 }
 export default Home;
