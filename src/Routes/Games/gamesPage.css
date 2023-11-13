@@ -12,3 +12,35 @@
     font-size: 13px;
     font-weight: 600;
 }
+.videoButton{
+    position: absolute;
+    font-size: 55px;
+    opacity: 60%;
+    width: 100%;
+    padding: 42px 0;
+    text-align: center;
+    transition: ease-out 0.2s;
+}
+.videoButton:hover{
+    transition: ease-in 0.2s;
+    opacity: 90%;
+    font-size: 70px;
+}
+.videoButton>div{
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+    font-weight: 500;
+    left: 175px;
+    bottom: 22px;
+    transition: ease-out 0.2s;
+}
+.videoButton>div:hover{
+    transition: ease-in 0.2s;
+    opacity: 100%;
+    font-size: 70px;
+}
+small{
+    font-size: 15px;
+    padding: 0 4px;
+}

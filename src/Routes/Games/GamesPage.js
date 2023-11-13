@@ -1,5 +1,6 @@
 import './gamesPage.css'
 import { VscSend } from 'react-icons/vsc'
+import { HiOutlinePlay } from 'react-icons/hi'
 const response = await fetch(
     "https://api-best-browser-games.vercel.app/games",
     {
@@ -18,6 +19,7 @@ function GamesPage() {
                 <div className="col" id={game.category._id}>
                     <div className="card shadow">
                         <img src={game.imageURL} className="card-img-top w-h" alt="imagem ilustrativa do jogo" />
+                        <a href={game.videoURL} className='text-decoration-none text-light videoButton'><HiOutlinePlay/><br/><div><small className='text-bg-dark rounded'>ver trailer</small></div></a>
                         <div className="card-body">
                             <h5 className="card-title">{game.name}</h5>
                             <p className="card-text">{game.description}</p>
