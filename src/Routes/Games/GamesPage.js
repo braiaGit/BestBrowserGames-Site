@@ -109,10 +109,11 @@ function GamesPage() {
                                 )
                             })}
                         </div>
-                        <form onSubmit={handleSubmit} className="modal-footer d-inline-flex comment-zone">
-                            <input type="text" className="form-control w-87" maxLength={255} name='comment' id="commentInput" placeholder="Comentar..." />
-                            <input type="number" className="form-control w-87" maxLength={255} name='score' placeholder="Nota..." />
-                            <button type="submit" disabled={session.token?false:true} className="btn btn-primary"><VscSend /></button>
+                        <form onSubmit={handleSubmit} className="modal-footer d-inline-flex">
+                            <label for="score" class="form-label me-4">Nota de 0 a 5:</label>
+                            0<input type="range" className="form-range" max={5} min={1} step={1} name='score' id='score' placeholder="Nota (0 a 5)..." /> 5
+                            <input type="text" className="form-control w-input" maxLength={255} name='comment' id="commentInput" placeholder="Comentar..." />
+                            <button type="submit" disabled={session.token?false:true} className="btn btn-warning"><VscSend /></button>
                         </form>
                     </div>
                 </div>

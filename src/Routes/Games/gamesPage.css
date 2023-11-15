@@ -7,8 +7,8 @@
 .card-total{
     height: 350px !important;
 }
-.w-87{
-    width: 87% !important;
+.w-input{
+    width: 92.4% !important;
 }
 .bgray{
     background-color: #EBEDF0;
@@ -51,6 +51,57 @@ span{
     font-size: 15px;
     padding: 0 4px;
 }
-.comment-zone{
-    
-}
+
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 11rem;
+  }
+  input[type="range"]:focus {
+    outline: none;
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #cecdca;
+    border-radius: 0.5rem;
+    height: 0.5rem;
+  }
+  
+  /* slider thumb */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -12px;
+    background-color: #ffc107;
+    border-radius: 1rem;
+    height: 2rem;
+    width: 1rem;
+  }
+  
+  input[type="range"]:focus::-webkit-slider-thumb {
+    outline: 3px solid #ffc107;
+    outline-offset: 0.125rem;
+  }
+  
+  input[type="range"]::-moz-range-track {
+    background-color: #cecdca;
+    border-radius: 0.5rem;
+    height: 0.5rem;
+  }
+  
+  /* slider thumb */
+  input[type="range"]::-moz-range-thumb {
+    background-color: #ffc107;
+    border: none; 
+    border-radius: 1rem;
+    height: 2rem;
+    width: 1rem;
+  }
+  
+  input[type="range"]:focus::-moz-range-thumb{
+    outline: 3px solid #ffc107;
+    outline-offset: 0.125rem;
+  }

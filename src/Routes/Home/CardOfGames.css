@@ -12,3 +12,12 @@
 .n{
     border: none;
 }
+.cardButtons{
+    position: absolute;
+    bottom: 15px;
+    width: 60%;
+    margin-left: 18px;
+}
+.card-total{
+    height: 350px !important;
+}

@@ -6,8 +6,8 @@ function RegisterPage() {
                 <form class="needs-validation" novalidate="">
                     <div class="row g-3">
                         <div class="col-sm-6">
-                            <label for="firstName" class="form-label">Nome completo</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="" />
+                            <label for="fullName" class="form-label">Nome completo</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="" value="" required="" />
                             <div class="invalid-feedback">
                                 Valid first name is required.
                             </div>

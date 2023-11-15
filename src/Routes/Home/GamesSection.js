@@ -9,7 +9,7 @@ import CardGame from './CardGame';
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <CardGame/>
                     <div class="col">
-                        <div class="card n bg-warning-subtle shadow">
+                        <div class="card n bg-warning-subtle shadow card-total">
                             <div class="card-body text-center onCenter">
                                 <h5 class="card-title">Ver lista completa de Games</h5>
                                 <p class="card-text lh-base ">

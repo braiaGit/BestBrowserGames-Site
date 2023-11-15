@@ -1,5 +1,5 @@
+import { Link } from 'react-router-dom';
 import './CardOfGames.css'
-import { VscSend } from 'react-icons/vsc'
 const response = await fetch(
     "https://api-best-browser-games.vercel.app/games",
     {
@@ -16,18 +16,20 @@ function CardGame() {
         if(index >= 2) return
         return (
             <div className="col">
-                <div className="card shadow">
+                <div className="card shadow card-total">
                     <img src={game.imageURL} className="card-img-top w-h" alt="imagem ilustrativa do jogo" />
-                    <div className="card-body">
-                        <h5 className="card-title">{game.name}</h5>
-                        <p className="card-text">{game.description}</p>
+                    <Link to="games" className='text-decoration-none'>
+                        <div className="card-body text-dark">
+                            <h5 className="card-title">{game.name}</h5>
+                            <p className="card-text text-truncate">{game.description}</p>
+                        </div>
+                    </Link>
                         <div className="btn-group cardButtons">
                             <a href={game.url} target='blank' className="btn btn-outline-warning fs-5">Jogar</a>
-                            <button type="button" className="btn btn-outline-dark fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Comentarios
-                            </button>
+                                <button type="button" className="btn btn-outline-dark fs-5">
+                                        <Link className='text-decoration-none text-dark' to='games'>Comentarios</Link>
+                                </button>
                         </div>
-                    </div>
                 </div>
             </div>
         )
@@ -35,26 +37,6 @@ function CardGame() {
     return (
         <>
             <Card/>
-             <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-             <div className="modal-dialog modal-fullscreen-sm-down">
-                 <div className="modal-content">
-                     <div className="modal-header">
-                         <h2 className="modal-title fs-5" id="exampleModalLabel">Modal title</h2>
-                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                     </div>
-                     <div className="modal-body row">
-                         <p class="col order-1 text-truncate rounded p-2 bgray w-87">
-                         <span className='fs-13'>Nome do usuario</span><br/>
-                         Jogo show Jogo por horasJogo show Jogo por horasJogo show Jogo por horasJogo show Jogo por horasJogo show Jogo por horasJogo show Jogo por horasJogo show Jogo por horasJogo show Jogo por horasJogo show Jogo por horasJogo show Jogo por horasJogo show Jogo
-                         </p>
-                     </div>
-                     <div className="modal-footer d-inline-flex">
-                         <input type="text" className="form-control w-87" maxLength={255} id="commentInput" placeholder="Comentar..." />
-                         <button type="button" className="btn btn-primary"><VscSend /></button>
-                     </div>
-                 </div>
-             </div>
-            </div>
         </>
     )
 }
