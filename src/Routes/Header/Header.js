@@ -5,7 +5,8 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import './header.css'
 import { Link } from 'react-router-dom';
 import { listNamesOfGames } from '../Games/GamesPage';
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { AuthContext } from '../../context/AuthContext';
 
 const response = await fetch(
   "https://api-best-browser-games.vercel.app/categories",
@@ -15,33 +16,51 @@ const response = await fetch(
       "Content-Type": "application/json",
     },
   }
-  );
-  const data = await response.json();  
-  
-  export let inputSValue = ''
-  function Header() {
-    const [busca, setBusca] = useState('');
-    const onSearch = (e)=> {
-      setBusca(e.target.value);
-      inputSValue=e.target.value;
-      console.log(inputSValue)
-    };
-    
-    
+);
+const data = await response.json();
 
 
-    const Categories = () =>
+
+
+
+
+export let inputSValue = ''
+function Header() {
+  const [busca, setBusca] = useState('');
+  const onSearch = (e) => {
+    setBusca(e.target.value);
+    inputSValue = e.target.value;
+    console.log(inputSValue)
+  };
+
+
+
+
+  const Categories = () =>
     data.map((category) => {
       return (
-        <NavDropdown.Item><Link className="text-decoration-none text-light p-1"  to={category.id}>
+        <NavDropdown.Item><Link className="text-decoration-none text-light p-1" to={category.id}>
           {category.name}
-          </Link>
+        </Link>
         </NavDropdown.Item>
       )
     })
-    
-    return (
-      <header className="px-2 text-bg-dark">
+  // se estiver logado
+  const { session, setSession } = useContext(AuthContext);
+  const ButtonsLogin = () => {
+    if (!session.token) {
+      return (
+        <div className="text-end">
+          <Link to='login' className="btn btn-outline-light me-2">Entrar</Link>
+          <Link to='register' className="btn btn-warning">Cadastrar</Link>
+        </div>
+      )
+    }
+  }
+
+
+  return (
+    <header className="px-2 text-bg-dark">
       <Navbar expand="lg" className="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
         <Container tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
           <Navbar.Brand className='navbar-brand text-warning t-s1'><Link to="/" className='text-decoration-none text-warning'>BBGames</Link></Navbar.Brand>
@@ -59,15 +78,12 @@ const response = await fetch(
             <NavDropdown.Divider />
             <NavDropdown.Item className='c-p-d'><Link to="games" className='text-decoration-none text-light'>
               Mostrar todos
-              </Link></NavDropdown.Item>
+            </Link></NavDropdown.Item>
           </NavDropdown>
           <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
             <input type="search" className="form-control form-control-dark text-bg-dark m-responsive" placeholder="Pesquisar..." aria-label="Search" value={busca} onChange={onSearch} />
           </form>
-          <div className="text-end">
-            <Link to='login' className="btn btn-outline-light me-2">Entrar</Link>
-            <Link to='register' className="btn btn-warning">Cadastrar</Link>
-          </div>
+          <ButtonsLogin />
         </Container>
       </Navbar>
     </header>
