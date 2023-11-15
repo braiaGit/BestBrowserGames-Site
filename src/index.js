@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-  createBrowserRouter,
-  RouterProvider
-} from 'react-router-dom'
+import {  createBrowserRouter,  RouterProvider } from 'react-router-dom'
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -14,6 +11,7 @@ import Home from './Routes/Home/Home';
 import GamesPage from './Routes/Games/GamesPage';
 import LoginPage from './Routes/Login/LoginPage';
 import RegisterPage from './Routes/Login/RegisterPage';
+import AuthProvider from './context/AuthContext';
 
 const router = createBrowserRouter([
   {
@@ -45,12 +43,9 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <RouterProvider
-    router={router}
-  />
-);
+  <AuthProvider>
+    <RouterProvider router={router} />
+  </AuthProvider>
+  );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

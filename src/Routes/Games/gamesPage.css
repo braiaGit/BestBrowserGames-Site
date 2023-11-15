@@ -1,6 +1,11 @@
 .cardButtons{
     position: absolute;
     bottom: 15px;
+    width: 60%;
+    margin-left: 18px;
+}
+.card-total{
+    height: 350px !important;
 }
 .w-87{
     width: 87% !important;
@@ -11,6 +16,9 @@
 .fs-13{
     font-size: 13px;
     font-weight: 600;
+}
+.cp{
+    cursor: pointer;
 }
 .videoButton{
     position: absolute;
@@ -36,11 +44,13 @@
     transition: ease-out 0.2s;
 }
 .videoButton>div:hover{
-    transition: ease-in 0.2s;
+    transition: ease-in 0.1s;
     opacity: 100%;
-    font-size: 70px;
 }
-small{
+span{
     font-size: 15px;
     padding: 0 4px;
+}
+.comment-zone{
+    
 }
