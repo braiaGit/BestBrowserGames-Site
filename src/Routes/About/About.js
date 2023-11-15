@@ -9,11 +9,6 @@ function About() {
     
     return(       
          <div className="shadow rounded p-5 mt-5 mb-5 pt-1 responsiveAbout">
-            {gamesFiltered.map((i)=>(
-        <ul>
-            <li key={i}>{i}</li>
-        </ul>
-    ))}
              <h2 className="fw-bold mb-2 m-3 mt-5">Sobre o BestBrowserGames</h2>
                 <p className="fs-5">
                     Bem-vindo ao BestBrowserGames, o seu destino definitivo para tudo relacionado a jogos de navegador! Nossa comunidade online é um ponto de encontro para entusiastas de jogos que desejam compartilhar suas experiências, descobrir novos títulos e encontrar as melhores aventuras que a web tem a oferecer.
